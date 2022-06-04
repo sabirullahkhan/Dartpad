@@ -1,0 +1,44 @@
+void main()
+{
+  String operation = '+';
+ //  String operation = '-';
+ //  String operation = '*';
+ //  String operation = '/';
+  int num1 = 50;
+  int num2 = 100;
+  int result = 0;
+  double div = 0;
+  
+  if(operation == '+')
+  {
+    result = num1 + num2;
+    print("The sum of $num1 and $num2 is: $result");
+  }
+  else if(operation == '-')
+  {
+    result = num1 - num2;
+    print("The subtraction of $num1 and $num2 is: $result");
+  }
+  else if(operation == '*')
+  {
+    result = num1 * num2;
+    print("The multiplication of $num1 and $num2 is: $result");
+  }
+  else if(operation == '/')
+  {
+    if(num1==0 || num2==0)
+    {
+      print("your number can't be zero");
+      
+    }
+    else
+    {
+      div = num1 / num2;
+      print("The Devision of $num1 and $num2 is: $div"); 
+    } 
+  }
+  else
+  {
+    print("Invalid entery for Operation");
+  }
+}
